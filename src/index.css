@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Netlify Drawer va avtomatik belgilarni yashirish */
+#netlify-drawer,
+netlify-drawer,
+[data-netlify-drawer],
+.netlify-feedback-badge,
+iframe[title*="Netlify" i] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}

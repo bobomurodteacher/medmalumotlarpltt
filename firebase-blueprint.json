@@ -1,0 +1,29 @@
+{
+  "entities": {
+    "submissions": {
+      "title": "Medical Worker Submissions",
+      "description": "Medical workers registered in DMED",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "fullName": { "type": "string" },
+        "position": { "type": "string" },
+        "workplace": { "type": "string" },
+        "passport": { "type": "string" },
+        "jshshir": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "fullName", "position", "workplace", "passport", "jshshir", "createdAt"]
+    },
+    "config": {
+      "title": "App Configuration",
+      "description": "Application settings, positions, workplaces and admin password",
+      "type": "object",
+      "properties": {
+        "adminPassword": { "type": "string" },
+        "positions": { "type": "array", "items": { "type": "string" } },
+        "workplaces": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}
